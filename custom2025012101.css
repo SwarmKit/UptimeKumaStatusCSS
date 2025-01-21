@@ -1,0 +1,75 @@
+/* 定义颜色变量 */
+:root {
+    /* Primary Colour */
+    --color-one: #198754; 
+    --color-one-hover: #6C4997;
+    
+    /* Border Colour */
+    --color-two: #6C4997;
+    --color-two-hover: #724da0;
+
+    height: 100%; /* 使根元素占满整个屏幕高度 */
+}
+
+/* 按钮样式 */
+.btn-info {
+    background-color: var(--color-one);
+    border-color: var(--color-two);
+}
+
+.btn-info:hover {
+    background-color: var(--color-one-hover);
+    border-color: var(--color-two-hover);
+}
+
+.btn-primary {
+    background-color: var(--color-one);
+    border-color: var(--color-two);
+}
+
+/* 健康条样式 */
+.hp-bar-big .beat[data-v-d2b93223] {
+    display: inline-block;
+    background-color: var(--color-one);
+}
+
+/* 总体状态样式 */
+.overall-status .ok[data-v-cae9ad4b] {
+    color: var(--color-one);
+}
+
+/* 背景样式 */
+.bg-primary {
+    background-color: var(--color-one) !important;
+    border-color: var(--color-two);
+}
+
+/* 缩小行间距的样式 */
+/* 全局缩小行间距 */
+* {
+    margin: 0; /* 清除默认的外边距 */
+    padding: 0; /* 清除默认的内边距 */
+    box-sizing: border-box; /* 确保盒模型计算一致 */
+}
+
+/* 针对段落、列表项、标题等元素缩小行间距 */
+p, li, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px; /* 调整此值以控制行间距，减少值以缩小间距 */
+    line-height: 1.1; /* 调整行高，减少值以缩小行间距 */
+}
+
+/* 针对表格元素缩小行间距 */
+table {
+    border-collapse: collapse; /* 合并表格边框 */
+    width: 100%; /* 使表格宽度占满容器 */
+}
+
+table th, table td {
+    padding: 5px; /* 调整表格单元格内边距，减少值以缩小间距 */
+    border: 1px solid var(--color-two); /* 添加表格边框 */
+}
+
+/* 针对其他块级元素缩小行间距 */
+div, section, article {
+    margin-bottom: -2px; /* 调整此值以控制块级元素之间的间距，减少值以缩小间距 */
+}
